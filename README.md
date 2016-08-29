@@ -31,8 +31,32 @@ This script is attached to the capsule named "FPC" in the hierarchy and enables 
 
 **ReadAnnotationName.cs**
 
-This script is attached to the first UI text element placed onto the plane of the annotation window.
+This script is attached to the first UI text element placed onto the plane of the annotation window. The code creates a list that Unity can access after calling the set/get function from the AnnotationsInfoObject script that stores data from the AnnotationsInfo.xml file. 
 
 **How to Add New Annotations**
 ==============================
+
+**Adding new furniture/devices/objects into model**
+
+**Adding new box colliders**
+
+**Deleting Annotations**
+========================
+
+**Editing Annotation Information**
+==================================
+
+**Current List of Objects with Annotations**
+============================================
+
+**Contacts**
+============
+
+Julia Tran - jt7@ualberta.ca
+
+Aishwarya Venkitachalam - avenkita@ualberta.ca
+
+Victor Fernandez - vf@ualberta.ca
+
+Eleni Stroulia - stroulia@ualberta.ca
 
