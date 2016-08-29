@@ -23,5 +23,16 @@ The Smart Condo Annotations is a Unity Project file. Upon opening the file in Un
 
 **camMouseLook.cs**
 
-This script is attached to the main camera of the scene which is parented under the first-person controller.
+This script is attached to the main camera of the scene which is also parented under the first-person controller.  It enables the camera to rotate up, down, right and left. By using linear interpolation, the script makes the camera movements smooth. 
+
+**CharacterController.cs**
+
+This script is attached to the capsule named "FPC" in the hierarchy and enables the controller to move forward, back, left and right. 
+
+**ReadAnnotationName.cs**
+
+This script is attached to the first UI text element placed onto the plane of the annotation window.
+
+**How to Add New Annotations**
+==============================
 
