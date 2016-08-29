@@ -11,6 +11,7 @@ This project's goal was to develop a code that provides users a method to add an
 
 
 **Opening Project File**
+
 The Smart Condo Annotations is a Unity Project file. Upon opening the file in Unity, open the scene named "Condo". The way that the components of the annotation window are positioned, the Game window must be full-screen horizontally. 
 
 
