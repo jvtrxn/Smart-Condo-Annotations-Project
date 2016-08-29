@@ -29,9 +29,15 @@ This script is attached to the main camera of the scene which is also parented u
 
 This script is attached to the capsule named "FPC" in the hierarchy and enables the controller to move forward, back, left and right. 
 
-**ReadAnnotationName.cs**
+**ReadAnnotationName.cs & ReadAnnotationInfo.cs**
 
-This script is attached to the first UI text element placed onto the plane of the annotation window. The code creates a list that Unity can access after calling the set/get function from the AnnotationsInfoObject script that stores data from the AnnotationsInfo.xml file. 
+These scripts are attached to the UI text elements of the annotation window. The code creates a list that Unity can access. After looping through each set of nodes by tag names within the xml, this data is stored inside the list, "ListofAnnotations". The code then calls for the function "getAnnotations" within the "AnnotationsInfoObject" script in order to retrieve this data as needed by the Update function. 
+The Update function declares string variables in order to instantiate the text for the annotations on the window. By using a 3D object's name (displayed in the hierarchy), the corresponding list element number and the tag name of the node, the name or information about the object can be displayed on the annotation window. 
+
+
+This script is attached to the first UI text element placed onto the plane of the annotation window. The code creates a list that Unity can access after calling the set/get function from the AnnotationsInfoObject script that stores data from the AnnotationsInfo.xml file. In order to read the xml file, the code loops through each set of nodes by tag names and stores this data as a list. 
+
+**AnnotationsInfoObject.cs**
 
 **How to Add New Annotations**
 ==============================
@@ -49,14 +55,5 @@ This script is attached to the first UI text element placed onto the plane of th
 **Current List of Objects with Annotations**
 ============================================
 
-**Contacts**
-============
 
-Julia Tran - jt7@ualberta.ca
-
-Aishwarya Venkitachalam - avenkita@ualberta.ca
-
-Victor Fernandez - vf@ualberta.ca
-
-Eleni Stroulia - stroulia@ualberta.ca
 
