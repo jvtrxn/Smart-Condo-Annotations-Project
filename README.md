@@ -51,6 +51,7 @@ This script grabs the string text within the XML file when its function, getAnno
 The Smart Condo model was completed before the annotation project. Please contact for more help and guidance.
 
 **_Adding new box colliders_**
+
 In order for the annotations to be displayed, the GameObject must have a collider on it that the raycast can hit. Placing a collider can be done in this manner:
 
 1. In the hierarchy, click on the name of the object that needs annotations. Clicking on the GameObject in the Scene window will highlight its name in the hierarchy. However, most times, it will be a single component of the object that has been clicked, thus it's name will be highlighted. Regardless, the component will be parented under the overall object name (parent) that can be seen in the hierarchy as well at this point. Ensure that it is the parent name (the object's actual name) that is selected.
