@@ -21,7 +21,7 @@ The Smart Condo Annotations is a Unity Project file. Upon opening the file in Un
 **Scripts**
 ===========
 
-**_camMouseLook.cs_**
+**_camMouseLook.cs_** 
 
 This script is attached to the main camera of the scene which is also parented under the first-person controller.  It enables the camera to rotate up, down, right and left. By using linear interpolation, the script makes the camera movements smooth. 
 
@@ -56,9 +56,12 @@ In order for the annotations to be displayed, the GameObject must have a collide
 
 1. In the hierarchy, click on the name of the object that needs annotations. Clicking on the GameObject in the Scene window will highlight its name in the hierarchy. However, most times, it will be a single component of the object that has been clicked, thus it's name will be highlighted. Regardless, the component will be parented under the overall object name (parent) that can be seen in the hierarchy as well at this point. Ensure that it is the parent name (the object's actual name) that is selected.
 
-**Note**: Unless the case is otherwise. Please read "Current List of Objects with Annotations". 
+**Note**: This is so unless the case is otherwise. Please read "Current List of Objects with Annotations". 
 
-2.
+2. After the object has been selected, in the Inspector window, click "Add Component". Within the search bar that appears, type in to find "Box Collider" and select it. 
+
+3. Most times, the box collider will be fitted to the GameObject itself, thus adding the box collider would be completed. However, if resizing is needed to make it easier for the ray to hit the collider or if the collider has not been fitted correctly, resizing can be done using the Inspector. 
+  * "Center" refers to the exact center of the box collider (which is a cube). 
 
 **_Adding a new annotation to the XML file_**
 
