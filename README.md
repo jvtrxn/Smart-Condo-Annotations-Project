@@ -15,11 +15,19 @@ This project's goal was to develop a code that provides users a method to add an
 **Opening & Running Project File**
 ==================================
 
-The Smart Condo Annotations is a Unity Project file. Upon opening the file in Unity, open the scene named "Condo". The way that the components of the annotation window are positioned, the Game window must be full-screen horizontally. After pressing play, position your mouse cursor to the slight left of the centre of the Game window in order to rotate the camera's view effectively. Hovering the cursor over an object in the model will bring up its annotations. Moving the mouse to point at different objects switches the annotations to the object that is currently being looked at. Use the arrow keys to position the first-person controller and the mouse together to explore the condo in this way.
+The Smart Condo Annotations is a Unity Project file. Upon opening the file in Unity (choose the folder "SmartCondoVR"), open the scene named "Condo". The way that the components of the annotation window are positioned, the Game window must be full-screen horizontally. After pressing play, position your mouse cursor to the slight left of the centre of the Game window in order to rotate the camera's view effectively. Hovering the cursor over an object in the model will bring up its annotations. Moving the mouse to point at different objects switches the annotations to the object that is currently being looked at. Use the arrow keys to position the first-person controller and the mouse together to explore the condo in this way.
 
+**XML File**
+============
+
+The XML file is named "AnnotationsInfo" and is stored within the Resoures folder of the Assets folder in the Unity project. For organizational purposes, the text for the annotations have been categorized by their location. The brackets detailing different list element numbers are for guidance and to ensure that the correct annotations are found by the code by matching the list element numbers in the XML file and in the Update function. 
+
+**Note**: The list element numbers always begin with 0.
 
 **Scripts**
 ===========
+
+All scripts are located wihtin the Scripts folder of the Assets folder in the Unity project.
 
 **_camMouseLook.cs_** 
 
@@ -43,7 +51,7 @@ The reason for having two scripts for both names and information of the gameObje
 
 This script grabs the string text within the XML file when its function, getAnnotations, is called by ReadAnnotationName.cs and ReadAnnotationInfo.cs.
 
-**How to Add New Annotations**
+**Adding New Annotations**
 ==============================
 
 **_Adding new furniture/devices/objects into model_**
@@ -67,6 +75,8 @@ In order for the annotations to be displayed, the GameObject must have a collide
 **Note**: To see which axis in which changes must be made, you can refer to the gizmo axis located in the top, right hand corner of the Scene window. The different axis colours correspond witht the axis colours of the GameObject's gizmo. 
 
 **_Adding a new annotation to the XML file_**
+
+Edits will need to be made 
 
 **_Adding the new annotation to the scripts_**
 
