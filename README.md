@@ -54,7 +54,7 @@ The Smart Condo model was completed before the annotation project. Please contac
 
 In order for the annotations to be displayed, the GameObject must have a collider on it that the raycast can hit. Placing a collider can be done in this manner:
 
-1. In the hierarchy, click on the name of the object that needs annotations. Clicking on the GameObject in the Scene window will highlight its name in the hierarchy. However, most times, it will be a single component of the object that has been clicked, thus it's name will be highlighted. Regardless, the component will be parented under the overall object name (parent) that can be seen in the hierarchy as well at this point. Ensure that it is the parent name (the object's actual name) that is selected.
+1. In the hierarchy, click on the name of the object that needs annotations. Clicking on the GameObject in the Scene window will highlight its name in the hierarchy. However, most times, it will be a single component of the object that has been clicked, thus it will be the component's name that will be highlighted. Regardless, the component will be parented under the overall object name (name of object) that can be seen in the hierarchy as well at this point. Ensure that it is the parent name (the object's actual name) that is selected.
 
 **Note**: This is so unless the case is otherwise. Please read "Current List of Objects with Annotations". 
 
@@ -76,7 +76,7 @@ In order for the annotations to be displayed, the GameObject must have a collide
 **Current List of Objects with Annotations**
 ============================================
 
-Below are the names of the objects within the model that currently have annotations. These names appear as is within Unity's hiearachy as well as the scripts, ReadAnnotationName.cs and ReadAnnotationInfo.cs. However, any bullets with brackets beside them do not have the same name as the annotation window displays. Due to unsuccessful attempts to place a collider over the entire object, colliders have only been placed on certain components, thus the names of these components (that are displayed in the hierarchy) are used in the script to retrieve the entire object's annotations from the XML. Despite this, the general name of the object is displayed by the annotation window as it is stored within the XML file.
+Below are the names of the objects within the model that currently have annotations. These names appear as is within Unity's hiearachy as well as the scripts, ReadAnnotationName.cs and ReadAnnotationInfo.cs. However, any bullets with brackets beside them do not have the same name as the annotation window displays. Due to unsuccessful attempts to place a collider over the entire object (hitting the object with the ray did not produce any annotation), colliders have only been placed on certain components, thus the names of these components (that are displayed in the hierarchy) are used in the script to retrieve the entire object's annotations from the XML. Despite this, the general name of the object is displayed by the annotation window as it is stored within the XML file.
 
 **_Bedroom_**
 * BED
