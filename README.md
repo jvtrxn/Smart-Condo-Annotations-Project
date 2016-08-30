@@ -20,7 +20,7 @@ The Smart Condo Annotations is a Unity Project file. Upon opening the file in Un
 **XML File**
 ============
 
-The XML file is named "AnnotationsInfo" and is stored within the Resoures folder of the Assets folder in the Unity project. For organizational purposes, the text for the annotations have been categorized by their location. The brackets detailing different list element numbers are for guidance and to ensure that the correct annotations are found by the code by matching the list element numbers in the XML file and in the Update function. 
+The XML file is named "AnnotationsInfo" and is stored within the Resoures folder of the Assets folder in the Unity project. For organizational purposes, the text for the annotations have been categorized by their location. The brackets detailing different list element numbers are for guidance and to ensure that the correct annotations are found by the code by matching the list element numbers in the XML file and in the Update functions of the "ReadAnnotationName.cs and ReadAnnotationInfo.cs" scripts.
 
 **Note**: The list element numbers always begin with 0.
 
