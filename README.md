@@ -57,5 +57,33 @@ The reason for having two scripts for names and information of the gameObjects i
 **Current List of Objects with Annotations**
 ============================================
 
+_Bedroom_
+* BED
+* BEDROOM TV (TV)
+* BACK DOOR
 
+_Kitchen_
+* KITCHEN ISLAND
+* AUTOPANTRY
+* KITCHEN SINK
+* TOASTER
+* DISHWASHER (Component#2_001 && Component#1_001)
+* KITCHEN OUTLET
+* STOVE
+* RANGE HOOD
+* MICROWAVE (Group_001)
+* OVEN 
+* FRIDGE
 
+_Bathroom_
+* BATHTUB
+* TOILET
+* BATHROOM SINK
+* SOAP DISPENSER
+* BATHROOM OUTLET
+
+_Dining Room_
+* DINING TABLE
+
+_Foyer_
+* FRONT DOOR
