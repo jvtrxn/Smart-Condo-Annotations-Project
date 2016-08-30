@@ -84,13 +84,19 @@ If an annotation is added to the end of the XML, the renumbering can be disregar
 
 Edits will need to be made within both scripts named "ReadAnnotationName.cs" and "ReadAnnotationInfo.cs". It is the same process to add a new annotation for both.
 
-If a new annotation was added between existing nodes within the XML, the list element numbers will be need to be renumbered as described before. Reunumbering will need to be done in the list of declared string variables and then within the if-statements that instantiate the annotation text (change the annotation#). 
+If a new annotation was added between existing nodes within the XML, the list element numbers will be need to be renumbered as described before. Reunumbering will need to be done in the list of declared string variables (change mylist[#]) and then within the if-statements that instantiate the annotation text (change the annotation#). 
+
+A new if-statement can be written exactly like seen in the code already. All that needs to be changed is the string for the name of the object as seen in the hierarchy. 
 
 **Deleting Annotations**
 ========================
 
+Any annotations that need to be removed can be deleted from the XML, the ReadAnnotationName.cs and ReadAnnotationInfo.cs files. Renumbering will need to be done with each deletion (-1) in order to ensure that the list element numbers for each object remains the same for both the XMLs and the ReadAnnotationName.cs/ReadAnnotationInfo.cs scripts.
+
 **Editing Annotation Information**
 ==================================
+
+Edits to already existing annotations can be made within the XML file in the correct node of the GameObject of choice. The code will instantiate the new text or any other edit after saving. 
 
 **Current List of Objects with Annotations**
 ============================================
