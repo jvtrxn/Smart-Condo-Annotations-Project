@@ -21,15 +21,15 @@ The Smart Condo Annotations is a Unity Project file. Upon opening the file in Un
 **Scripts**
 ===========
 
-**camMouseLook.cs**
+**_camMouseLook.cs_**
 
 This script is attached to the main camera of the scene which is also parented under the first-person controller.  It enables the camera to rotate up, down, right and left. By using linear interpolation, the script makes the camera movements smooth. 
 
-**CharacterController.cs**
+**_CharacterController.cs_**
 
 This script is attached to the capsule named "FPC" in the hierarchy and enables the controller to move forward, back, left and right. 
 
-**ReadAnnotationName.cs & ReadAnnotationInfo.cs**
+**_ReadAnnotationName.cs & ReadAnnotationInfo.cs_**
 
 These scripts are attached to the UI text elements of the annotation window. The code creates a list that Unity can access. After looping through each set of nodes by tag names within the XML, this data is stored inside the list, "ListofAnnotations". The code then calls for the function "getAnnotations" within the "AnnotationsInfoObject" script in order to retrieve this data (text) as needed by the Update function. 
 
@@ -39,16 +39,19 @@ The raycast originates from the camera and its direction is dependent on the pos
 
 The reason for having two scripts for both names and information of the gameObjects is for the purpose of being able to format the two different parts of the annotation differently. Thus, the name text is larger and bold while the information text is smaller and not bolded. Otherwise, formatting is unavailable. 
 
-**AnnotationsInfoObject.cs**
+**_AnnotationsInfoObject.cs_**
 
 This script grabs the string text within the XML file when its function, getAnnotations, is called by ReadAnnotationName.cs and ReadAnnotationInfo.cs.
 
 **How to Add New Annotations**
 ==============================
 
-**Adding new furniture/devices/objects into model**
+**_Adding new furniture/devices/objects into model_**
 
-**Adding new box colliders**
+The Smart Condo model was completed before the annotation project. Please contact for more help and guidance.
+
+**_Adding new box colliders_**
+In order for the annotations to be displayed, the GameObject must have a collider on it that the raycast can hit
 
 **Deleting Annotations**
 ========================
@@ -61,12 +64,12 @@ This script grabs the string text within the XML file when its function, getAnno
 
 Below are the names of the objects within the model that currently have annotations. These names appear as is within Unity's hiearachy as well as the scripts, ReadAnnotationName.cs and ReadAnnotationInfo.cs. However, any bullets with brackets beside them do not have the same name as the annotation window displays. Due to unsuccessful attempts to place a collider over the entire object, colliders have only been placed on certain components, thus the names of these components (that are displayed in the hierarchy) are used in the script to retrieve the entire object's annotations from the XML. Despite this, the general name of the object is displayed by the annotation window as it is stored within the XML file.
 
-_Bedroom_
+**_Bedroom_**
 * BED
 * BEDROOM TV (TV)
 * BACK DOOR
 
-_Kitchen_
+**_Kitchen_**
 * KITCHEN ISLAND
 * AUTOPANTRY
 * KITCHEN SINK
@@ -79,15 +82,15 @@ _Kitchen_
 * OVEN 
 * FRIDGE
 
-_Bathroom_
+**_Bathroom_**
 * BATHTUB
 * TOILET
 * BATHROOM SINK
 * SOAP DISPENSER
 * BATHROOM OUTLET
 
-_Dining Room_
+**_Dining Room_**
 * DINING TABLE
 
-_Foyer_
+**_Foyer_**
 * FRONT DOOR
