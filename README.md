@@ -59,7 +59,7 @@ This script grabs the string text within the XML file when its function, getAnno
 **Current List of Objects with Annotations**
 ============================================
 
-l
+Below are the names of the objects within the model that currently have annotations. These names appear as is within Unity's hiearachy as well as the scripts, ReadAnnotationName.cs and ReadAnnotationInfo.cs. However, bull
 
 _Bedroom_
 * BED
