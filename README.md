@@ -76,9 +76,15 @@ In order for the annotations to be displayed, the GameObject must have a collide
 
 **_Adding a new annotation to the XML file_**
 
-Edits will need to be made 
+Adding a new node to the list can be done in the exact same way as the previous annotations (as seen within the file). It may be inserted anywhere. However, inputting a new annotation within the file (between nodes) will require the list element numbers within the XML and within the two scripts (ReadAnnotationName.cs & ReadAnnotationInfo.cs) to be renumbered. Thus, from the point in the XML that has been changed and downwards, with each new additional annotation, the list element numbers will increase by 1. 
+
+If an annotation is added to the end of the XML, the renumbering can be disregarded.
 
 **_Adding the new annotation to the scripts_**
+
+Edits will need to be made within both scripts named "ReadAnnotationName.cs" and "ReadAnnotationInfo.cs". It is the same process to add a new annotation for both.
+
+If a new annotation was added between existing nodes within the XML, the list element numbers will be need to be renumbered as described before. Reunumbering will need to be done in the list of declared string variables and then within the if-statements that instantiate the annotation text (change the annotation#). 
 
 **Deleting Annotations**
 ========================
