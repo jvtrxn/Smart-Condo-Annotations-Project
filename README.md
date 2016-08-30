@@ -3,7 +3,7 @@
 **The Smart Condo**
 ===================
 
-The Smart Condo is a research facility located in the Edmonton Clinic Health Academy. It is used to simulate home visits, allowing healthcare professionals to increase their understanding of assisted living devices. The condo features intelligent technologies, such as sensors and smart appliances, providing opportunities for researchers and practitioners to learn how to communicate and collaborate with patients living in 'intelligent' homes. (http://www.hserc.ualberta.ca/Resources/Spaces/SmartCondo.aspx)
+The Smart Condo is a research facility located in the Edmonton Clinic Health Academy. It is used to simulate home visits, allowing healthcare professionals to increase their understanding of assisted living devices. The condo features intelligent technologies, such as sensors and smart appliances, providing opportunities for researchers and practitioners to learn how to communicate and collaborate with patients living in 'intelligent' homes. >http://www.hserc.ualberta.ca/Resources/Spaces/SmartCondo.aspx
 
 
 **Project Purpose**
