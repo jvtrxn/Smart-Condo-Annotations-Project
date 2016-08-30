@@ -54,14 +54,17 @@ The Smart Condo model was completed before the annotation project. Please contac
 
 In order for the annotations to be displayed, the GameObject must have a collider on it that the raycast can hit. Placing a collider can be done in this manner:
 
-1. In the hierarchy, click on the name of the object that needs annotations. Clicking on the GameObject in the Scene window will highlight its name in the hierarchy. However, most times, it will be a single component of the object that has been clicked, thus it will be the component's name that will be highlighted. Regardless, the component will be parented under the overall object name (name of object) that can be seen in the hierarchy as well at this point. Ensure that it is the parent name (the object's actual name) that is selected.
+1. In the hierarchy, click on the name of the object that needs annotations. Clicking on the GameObject in the Scene window will highlight its name in the hierarchy. However, most times, it will be a single component of the object that has been clicked, thus it will be the component's name that will be highlighted instead. Regardless, the component will be parented under the overall object name (name of object) that can be seen in the hierarchy as well at this point. Ensure that it is the parent name (the object's actual name) that is selected.
 
 **Note**: This is so unless the case is otherwise. Please read "Current List of Objects with Annotations". 
 
 2. After the object has been selected, in the Inspector window, click "Add Component". Within the search bar that appears, type in to find "Box Collider" and select it. 
 
-3. Most times, the box collider will be fitted to the GameObject itself, thus adding the box collider would be completed. However, if resizing is needed to make it easier for the ray to hit the collider or if the collider has not been fitted correctly, resizing can be done using the Inspector. 
-  * "Center" refers to the exact center of the box collider (which is a cube). 
+3. Most times, the box collider will be fitted to the GameObject itself, thus adding the box collider would then be completed. However, if resizing is needed to make it easier for the ray to hit the collider or if the collider has not been fitted correctly, resizing can be done using the Inspector. 
+  * "Center" refers to the exact center of the box collider. Translations are done along either of the three axis.
+  * Changing values in "Size" alters the size of the collider in two, opposite directions along any of the axis. 
+
+**Note**: To see which axis in which changes must be made, you can refer to the gizmo axis located in the top, right hand corner of the Scene window. The different axis colours correspond witht the axis colours of the GameObject's gizmo. 
 
 **_Adding a new annotation to the XML file_**
 
